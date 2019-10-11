@@ -43,3 +43,6 @@ query2_2 = '''SELECT CategoryID, COUNT (DISTINCT ProductName)
 cat_with_prod = cursor.execute(query2_2).fetchall()
 print(cat_with_prod)
 print ("The category with the largest number and its number of products are: ", cat_with_prod)
+
+cursor.close()
+CONN.commit()
